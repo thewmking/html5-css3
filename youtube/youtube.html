@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="youtube.css">
+    <link rel="stylesheet" type="text/css" href="youtube.css"/>
+    <script>
+      function toggleMenu(x) {
+        x.classList.toggle("change");
+      }
+    </script>
   </head>
   <body>
     <header>
       <nav>
         <menu>
-          <div class="menu-btn">
+          <div class="menu-btn" onclick="toggleMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
           <div id="logo">
+            <img src="images/youtube.png"></img>
           </div>
         </menu>
         <div id="search-box">

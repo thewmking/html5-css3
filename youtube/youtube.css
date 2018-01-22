@@ -1,0 +1,26 @@
+nav menu {
+  float: left; }
+  nav menu .menu-btn {
+    float: left; }
+    nav menu .menu-btn .bar1, nav menu .menu-btn .bar2, nav menu .menu-btn .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s; }
+  nav menu .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  nav menu .change .bar2 {
+    opacity: 0; }
+  nav menu .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -6px);
+    transform: rotate(45deg) translate(-9px, -6px); }
+  nav menu #logo {
+    width: 80px;
+    float: right;
+    padding: 10px; }
+    nav menu #logo img {
+      width: 100%; }
+
+/*# sourceMappingURL=youtube.css.map */
