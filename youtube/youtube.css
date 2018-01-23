@@ -31,16 +31,16 @@ body {
         -webkit-transform: rotate(45deg) translate(-1px, -5px);
         transform: rotate(45deg) translate(-1px, -5px); }
       body nav menu #logo {
-        width: 80px;
+        width: 129px;
         float: right;
         padding-left: 10px; }
         body nav menu #logo img {
-          width: 100%; }
+          width: 80px; }
     body nav #search-box {
       display: flex;
       flex-direction: row;
       margin: 0 40px;
-      max-width: 656px;
+      max-width: none;
       justify-content: flex-start;
       flex: 1;
       flex-basis: 0.0000000001px; }
@@ -89,9 +89,24 @@ body {
           background-color: #dbdbdb;
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
           border-color: #aeaeae; }
+    body nav #icons {
+      display: flex;
+      flex-direction: row;
+      min-width: 195px;
+      justify-content: flex-end;
+      align-items: center; }
+      body nav #icons .fa {
+        color: #A0A0A0;
+        font-size: 22px;
+        margin-left: 20px;
+        padding: 10px; }
   body .body-container {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 7%;
+    margin-right: 7%;
     margin-top: 20px; }
+    body .body-container .body-left {
+      float: left; }
+    body .body-container .body-right {
+      float: right; }
 
 /*# sourceMappingURL=youtube.css.map */

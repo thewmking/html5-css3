@@ -32,17 +32,17 @@ body
         transform: rotate(45deg) translate(-1px, -5px)
 
       #logo
-        width: 80px
+        width: 129px
         float: right
         padding-left: 10px
         img
-          width: 100%
+          width: 80px
 
     #search-box
       display: flex
       flex-direction: row
       margin: 0 40px
-      max-width: 656px
+      max-width: none
       justify-content: flex-start
       flex: 1
       flex-basis: 0.0000000001px
@@ -92,8 +92,24 @@ body
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.10)
           border-color: #aeaeae
 
+    #icons
+      display: flex
+      flex-direction: row
+      min-width: 195px
+      justify-content: flex-end
+      align-items: center
+      .fa
+        color: #A0A0A0
+        font-size: 22px
+        margin-left: 20px
+        padding: 10px
 
   .body-container
-    margin-left: 20%
-    margin-right: 20%
+    margin-left: 7%
+    margin-right: 7%
     margin-top: 20px
+
+    .body-left
+      float: left
+    .body-right
+      float: right
