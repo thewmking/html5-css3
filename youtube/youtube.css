@@ -104,9 +104,9 @@ body {
   body .body-container {
     margin-left: 7%;
     margin-right: 7%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    display: flex; }
     body .body-container .body-left {
-      float: left;
       width: 640px; }
       body .body-container .body-left #video-info {
         min-height: 60px;
@@ -206,8 +206,111 @@ body {
         body .body-container .body-left .vid-description-box .vid-description {
           margin-left: 58px;
           font-size: 13px; }
+      body .body-container .body-left .vid-comments .comments-header {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: row; }
+        body .body-container .body-left .vid-comments .comments-header .comments-count {
+          margin-right: 32px;
+          display: inline-block;
+          align-items: flex-start; }
+        body .body-container .body-left .vid-comments .comments-header .comments-sort {
+          font-size: 13px;
+          color: #707070; }
+      body .body-container .body-left .vid-comments .your-comment {
+        display: flex;
+        margin-bottom: 32px; }
+        body .body-container .body-left .vid-comments .your-comment .user-icon {
+          font-size: 3em;
+          margin-right: 16px; }
+        body .body-container .body-left .vid-comments .your-comment .input {
+          flex: 1; }
+          body .body-container .body-left .vid-comments .your-comment .input input {
+            cursor: text;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #707070;
+            flex: 1;
+            flex-basis: 0.000000001px;
+            outline: none;
+            border: none;
+            font-size: 1em;
+            line-height: 2.1em;
+            width: 100%; }
+          body .body-container .body-left .vid-comments .your-comment .input .input-line {
+            height: 1px;
+            background-color: #e8e8e8; }
+      body .body-container .body-left .vid-comments .single-comment {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 16px; }
+        body .body-container .body-left .vid-comments .single-comment .user-icon {
+          font-size: 3em;
+          margin-right: 16px; }
+      body .body-container .body-left .vid-comments .comment-content-box {
+        display: flex;
+        flex-direction: column;
+        font-size: 13px; }
+        body .body-container .body-left .vid-comments .comment-content-box .comment-content-top {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 4px; }
+          body .body-container .body-left .vid-comments .comment-content-box .comment-content-top .user-name {
+            font-weight: bold; }
+          body .body-container .body-left .vid-comments .comment-content-box .comment-content-top .comment-date {
+            color: #707070;
+            margin-left: 8px; }
+      body .body-container .body-left .vid-comments .comment-content {
+        font-size: 14px; }
+      body .body-container .body-left .vid-comments .comment-actions {
+        margin-top: 4px;
+        display: flex;
+        flex-direction: row;
+        font-weight: 400;
+        color: #A0A0A0; }
+        body .body-container .body-left .vid-comments .comment-actions .like-count, body .body-container .body-left .vid-comments .comment-actions .comment-reply {
+          padding-top: 6px; }
+        body .body-container .body-left .vid-comments .comment-actions .fa {
+          font-size: 15px;
+          padding: 6px; }
     body .body-container .body-right {
-      float: right;
-      width: 402px; }
+      width: auto;
+      margin-left: 24px; }
+      body .body-container .body-right .video-sidebar .up-next {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e5e5e5; }
+        body .body-container .body-right .video-sidebar .up-next .up-next-header {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          body .body-container .body-right .video-sidebar .up-next .up-next-header .up-next-text {
+            flex: 1; }
+          body .body-container .body-right .video-sidebar .up-next .up-next-header .autoplay-box {
+            color: #707070; }
+        body .body-container .body-right .video-sidebar .up-next .up-next-video {
+          margin-top: 10px; }
+      body .body-container .body-right .video-box {
+        display: flex;
+        flex-direction: row; }
+        body .body-container .body-right .video-box .video-contents {
+          width: 400px;
+          margin-left: 6px;
+          display: flex;
+          flex-direction: column; }
+          body .body-container .body-right .video-box .video-contents .video-title {
+            font-size: 14px;
+            font-weight: bold; }
+          body .body-container .body-right .video-box .video-contents .video-channel, body .body-container .body-right .video-box .video-contents .video-views {
+            color: #707070;
+            font-size: 13px; }
+      body .body-container .body-right .video-list .video-box {
+        margin-bottom: 5px; }
+
+@media (min-width: 1294px) {
+  .body-left {
+    width: 480px; }
+
+  .body-right {
+    width: 702px; } }
 
 /*# sourceMappingURL=youtube.css.map */

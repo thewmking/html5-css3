@@ -109,9 +109,10 @@ body
     margin-left: 7%
     margin-right: 7%
     margin-top: 20px
+    display: flex
 
     .body-left
-      float: left
+      //float: left
       width: 640px
 
       #video-info
@@ -213,7 +214,118 @@ body
         .vid-description
           margin-left: 58px
           font-size: 13px
+      .vid-comments
+        .comments-header
+          margin-bottom: 24px
+          display: flex
+          flex-direction: row
+          .comments-count
+            margin-right: 32px
+            display: inline-block
+            align-items: flex-start
+          .comments-sort
+            font-size: 13px
+            color: #707070
+        .your-comment
+          display: flex
+          margin-bottom: 32px
+          .user-icon
+            font-size: 3em
+            margin-right: 16px
+          .input
+            flex: 1
+            input
+              cursor: text
+              padding-bottom: 4px
+              border-bottom: 1px solid #707070
+              flex: 1
+              flex-basis: 0.000000001px
+              outline: none
+              border: none
+              font-size: 1em
+              line-height: 2.1em
+              width: 100%
+            .input-line
+              height: 1px
+              background-color: #e8e8e8
+        .single-comment
+          display: flex
+          flex-direction: row
+          margin-bottom: 16px
+          .user-icon
+            font-size: 3em
+            margin-right: 16px
+        .comment-content-box
+          display: flex
+          flex-direction: column
+          font-size: 13px
+          .comment-content-top
+            display: flex
+            flex-direction: row
+            margin-bottom: 4px
+            .user-name
+              font-weight: bold
+            .comment-date
+              color: #707070
+              margin-left: 8px
+        .comment-content
+          font-size: 14px
+        .comment-actions
+          margin-top: 4px
+          display: flex
+          flex-direction: row
+          font-weight: 400
+          color: #A0A0A0
+          .like-count, .comment-reply
+            padding-top: 6px
+          .fa
+            font-size: 15px
+            padding: 6px
+
+
+
+
 
     .body-right
-      float: right
-      width: 402px
+      width: auto
+      margin-left: 24px
+      .video-sidebar
+        .up-next
+          padding-bottom: 5px
+          margin-bottom: 10px
+          border-bottom: 1px solid #e5e5e5
+          .up-next-header
+            display: flex
+            flex-direction: row
+            align-items: center
+            .up-next-text
+              flex: 1
+            .autoplay-box
+              color: #707070
+          .up-next-video
+            margin-top: 10px
+      .video-box
+        display: flex
+        flex-direction: row
+        .video-contents
+          width: 400px
+          margin-left: 6px
+          display: flex
+          flex-direction: column
+          .video-title
+            font-size: 14px
+            font-weight: bold
+          .video-channel, .video-views
+            color: #707070
+            font-size: 13px
+      .video-list
+        .video-box
+          margin-bottom: 5px
+
+
+
+@media (min-width: 1294px)
+  .body-left
+    width: 480px
+  .body-right
+    width: 702px
